@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
+
 
 namespace WebStore.Models
 {
@@ -20,7 +22,7 @@ namespace WebStore.Models
         [Required(ErrorMessage = "Pick a category")]
         public int CategoryId { get; set; }
 
-        [Required(ErrorMessage = "Price has to be more then 0")]
+        [Required(ErrorMessage = "Price has to be more than 0")]
         public double Price { get; set; }
 
         [Required(ErrorMessage = "Stock has to be atleast 1")]
